@@ -2,7 +2,7 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY application-service/src/index.json ./
+COPY application-service/src/index.js ./
 
 RUN npm install --development
 
