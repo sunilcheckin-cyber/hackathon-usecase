@@ -3,8 +3,6 @@ FROM node:20-alpine
 # Create app directory
 WORKDIR /app
 
-# Copy dependency files first (Docker cache optimization)
-COPY package*.json ./
 
 # Install production dependencies
 RUN npm install --production
